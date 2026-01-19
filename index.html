@@ -20,25 +20,94 @@
   </p>
 </section>
 
-<!-- SECTION 1 -->
-<section class="info">
+<!-- ===== ADVANCED MACHINES SECTION ===== -->
+<section class="info-section">
+
+  <!-- CNC MACHINE -->
   <div class="box" data-aos="fade-right">
-    <h2>CNC Machines</h2>
+    <h2>CNC Machine</h2>
     <p>
-      CNC machines work using programmed G-code that controls
-      cutting tools with extreme precision and repeatability.
+      CNC machines use computer-controlled programming to perform
+      high-precision cutting, drilling and shaping operations.
     </p>
+
+    <button class="more-btn" onclick="toggleInfo('cnc-info')">
+      More Details ↓
+    </button>
+
+    <div class="expand-box" id="cnc-info">
+      <p>
+        <b>What is CNC?</b><br>
+        CNC (Computer Numerical Control) is an automated manufacturing
+        process where machines operate using G-code instructions.
+      </p>
+
+      <p>
+        <b>Working Principle:</b><br>
+        CAD Design → CAM Toolpath → G-Code → Controller → Servo Motors →
+        Accurate Machining.
+      </p>
+
+      <p>
+        <b>Main Components:</b><br>
+        Controller, Servo Motors, Ball Screws, Spindle Motor, Tool Changer,
+        Feedback Sensors.
+      </p>
+
+      <div class="image-strip">
+        <img src="images/cnc1.jpg" alt="CNC Machine">
+        <img src="images/cnc2.jpg" alt="CNC Working">
+        <img src="images/cnc3.jpg" alt="CNC Cutting">
+        <img src="images/cnc4.jpg" alt="CNC Controller">
+      </div>
+
+      <p>
+        <b>Applications:</b><br>
+        Aerospace, automotive, PCB manufacturing, mold making,
+        medical equipment, precision industries.
+      </p>
+    </div>
   </div>
 
+  <!-- VMC MACHINE -->
   <div class="box" data-aos="fade-left">
-    <h2>VMC Working</h2>
+    <h2>VMC Machine</h2>
     <p>
-      Vertical Machining Centers operate on multi-axis control
-      systems for drilling, milling and contouring operations.
+      VMC (Vertical Machining Center) machines are used for milling,
+      drilling and contour machining with vertical spindle alignment.
     </p>
-  </div>
-</section>
 
+    <button class="more-btn" onclick="toggleInfo('vmc-info')">
+      More Details ↓
+    </button>
+
+    <div class="expand-box" id="vmc-info">
+      <p>
+        <b>What is VMC?</b><br>
+        A VMC is a CNC machine where the spindle is vertically oriented,
+        ideal for flat and complex surface machining.
+      </p>
+
+      <p>
+        <b>Axis System:</b><br>
+        X, Y, Z linear axes with optional 4th rotary axis for advanced jobs.
+      </p>
+
+      <div class="image-strip">
+        <img src="images/vmc1.jpg" alt="VMC Machine">
+        <img src="images/vmc2.jpg" alt="VMC Operation">
+        <img src="images/vmc3.jpg" alt="VMC Tooling">
+      </div>
+
+      <p>
+        <b>Industries:</b><br>
+        Tool rooms, die making, electronics enclosures,
+        automotive and aerospace components.
+      </p>
+    </div>
+  </div>
+
+</section>
 <!-- SECTION 2 -->
 <section class="dark">
   <div class="box" data-aos="zoom-in">

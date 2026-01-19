@@ -80,6 +80,61 @@ body {
   font-size: 15px;
 }
 
+/* ===== EXPAND DETAILS BUTTON ===== */
+.more-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #0044cc, #00aaff);
+  transition: 0.3s ease;
+}
+
+.more-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== HIDDEN CONTENT ANIMATION ===== */
+.expand-box {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease;
+  margin-top: 15px;
+}
+
+.expand-box.open {
+  max-height: 2500px;
+}
+
+/* ===== IMAGE GALLERY STYLE ===== */
+.image-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.image-strip img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease;
+}
+
+.image-strip img:hover {
+  transform: scale(1.1);
+}
+
+/* SECTION WRAP */
+.info-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
 /* FOOTER */
 footer {
   background: #000;
